@@ -116,8 +116,8 @@ body {
     line-height: 1.4;
 }
 
-.next-btn {
-    position: absolute;
+.next-btn, .back-btn {
+    position: static;
     bottom: 30px;
     right: 30px;
 
@@ -131,9 +131,19 @@ body {
     transition: all 0.3s ease;
 }
 
-.next-btn:hover {
+.next-btn:hover, .back-btn:hover {
     transform: scale(1.1) translateY(-2px);
     background: rgba(127, 255, 212, 0.3);
     box-shadow: 0 0 20px rgba(127, 255, 212, 0.6);
-    color: white;
+}
+
+.button-group {
+    position: absolute;
+    bottom: 15px;
+    bottom: 15px;
+    right: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
 }
