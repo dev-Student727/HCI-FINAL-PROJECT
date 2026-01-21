@@ -35,19 +35,36 @@ body {
     margin: 0;
 }
 
-.nav-links li {
+.nav-links li a {
     margin-left: 30px;
-}
-
-.nav-links a {
     color: midnightblue;
     text-decoration: none;
     font-size: 1.2rem;
-    transition: opacity 0.5s;
+    transition: all 0.5s ease-in-out;
+    position: relative;
 }
 
-.nav-links a:hover {
-    opacity: 0.7;
+.nav-links li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #7ef3e1;
+  box-shadow: 0 0 10px #7ef3e1;
+  transition: width 0.3s ease;
+}
+
+.nav-links li a:hover {
+    transform: translateY(-3px) scale(2.2);
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8), 
+                 0 0 15px rgba(126, 243, 225, 0.6);
+    color: blue;
+}
+
+.nav-links li a:hover::after {
+  width: 100%;
 }
 
 
@@ -77,6 +94,34 @@ body {
     text-align: center;
     align-items: center;
     justify-content: center;
+
+    overflow: hidden;
+    z-index: 1;
+}
+
+.glass-content::after {
+    content: '';
+    position: absolute;
+    inset: 4px;
+    background: rgba(20, 20, 40, 0.8);
+    backdrop-filter: blur(25px);
+    border-radius: 26px;
+    z-index: -1;
+}
+
+.glass-content::before {
+    content: '';
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    background: conic-gradient(transparent,blue,transparent 30%);
+    animation: rotateGlow 4s linear infinite;
+    z-index: -2;
+}
+
+@keyframes rotateGlow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
 
 .glass-content h1 {
