@@ -24,7 +24,7 @@ function backPage() {
     const nextBtn = document.getElementById('next-btn');
 
     title.innerText = "TECH. PROFESSIONAL";
-    desc.innerText = "Your Ultimate Guide to Computer Hardware! Dive into the world of computer hardware with TECH. PRO. Learn more about computer parts and their functions.";
+    desc.innerText = "From the lightning-fast processing of the CPU to the vast storage capacity of SSDs, tech. pro has breaking down every physical part that powers your digital world. Understand the 'what' and the 'why' behind your hardware and Hardware is more than just parts; it is a system of functional excellence. Learn how data travels from input devices through the motherboard to create the seamless experience you see on your screen.";
 
     backBtn.style.display = "none";
     nextBtn.style.display = "block";
