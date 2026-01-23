@@ -172,6 +172,23 @@ body {
     
 }
 
+.glass-container {
+    width: 100%; 
+    padding: 40px 40px 80px 40px ;
+
+    background: rgba(17,17,132, 0.5); 
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+
+    box-shadow: 0 0 10px rgba(102,241,194, 15), 0 0 30px rgba(102,241,194, 10),inset 0 0 15px rgba(102,241,194, 0.8);
+    color: whitesmoke;
+    min-height: 62vh;
+    box-sizing: border-box;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
 @keyframes entranceAnimation {
   0% {opacity: 0; transform: translateY(40px);}
   100% {opacity: 1; transform: translateY(0);}
