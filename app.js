@@ -37,5 +37,74 @@ function backPage() {
     setTimeout(() => {
         contentArea.style.opacity = 1;
     }, 50);
-
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const partData = {
+        "keyboard-mouse": {
+            name: "Keyboard & Mouse",
+            history: "",
+            function: "",
+            img: "img 1.png"
+        },
+        "pc-case": {
+            name: "",
+            history: "",
+            function: "",
+            image: ""
+        },
+        "cpu": {
+            name: "",
+            history: "",
+            function: "",
+            image: ""
+        },
+        "monitor": {
+            name: "",
+            history: "",
+            function: "",
+            image: ""
+        },
+        "ssd": {
+            name: "",
+            history: "",
+            function: "",
+            image: ""
+        },
+        "hdd": {
+            name: "",
+            history: "",
+            function: "",
+            image: ""
+        },
+        "ram": {
+            name: "",
+            history: "",
+            function: "",
+            image: ""
+        }
+    };
+    window.openSlide = function(partKey) {
+        console.log("Opening slide for:", partKey);
+        const data = partData[partKey];
+        const overlay = document.getElementById('infoSlide');
+
+        if (data && overlay) {
+            document.getElementById("partName").innerText = data.name;
+            document.getElementById("partHistory").innerText = data.history;
+            document.getElementById("partFunction").innerText = data.function;
+            document.getElementById("partImg").src = data.image;
+
+            overlay.classList.add("active");
+            console.log("Slide opened successfully.");
+        } else {
+            console.error("Missing data for key:", partKey);
+        }
+    };
+    window.closeSlide = function() {
+        const overlay = document.getElementById("infoSlide");
+        if (overlay) {
+            overlay.classList.remove("active");
+        }
+    };
+});

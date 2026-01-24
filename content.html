@@ -28,15 +28,33 @@
     <div class="content-wrapper">
         <main class="glass-container">
             <div class="carousel-track">
-                <div class="card left-card"><img src="../HCI-FINAL-PROJECT/assets/img 1.png" alt="Right"></div>
-                <div class="card left-card"><img src="../HCI-FINAL-PROJECT/assets/img 3.png" alt="Right"></div>
-                <div class="card left-card"><img src="../HCI-FINAL-PROJECT/assets/img 3.png" alt="Right"></div>
-                <div class="card center-card"><img src="../HCI-FINAL-PROJECT/assets/img 2.png" alt="Center"></div>
-                <div class="card right-card"><img src="../HCI-FINAL-PROJECT/assets/img 3.png" alt="Left"></div>
-                <div class="card right-card"><img src="../HCI-FINAL-PROJECT/assets/img 3.png" alt="Left"></div>
-                <div class="card right-card"><img src="../HCI-FINAL-PROJECT/assets/img 3.png" alt="Left"></div>
+                <div class="card left-card-1" onclick="openSlide('keyboard-mouse')"><img src="../HCI-FINAL-PROJECT/assets/img 1.png" alt="Right"></div>
+                <div class="card left-card-2" onclick="openSlide('pc-case')"><img src="../HCI-FINAL-PROJECT/assets/img 2.png" alt="Right"></div>
+                <div class="card left-card-3" onclick="openSlide('cpu')"><img src="../HCI-FINAL-PROJECT/assets/img 3.png" alt="Right"></div>
+                <div class="card center-card"onclick="openSlide('monitor')"><img src="../HCI-FINAL-PROJECT/assets/img 4.png" alt="Center"></div>
+                <div class="card right-card-1" onclick="openSlide('ssd')"><img src="../HCI-FINAL-PROJECT/assets/img 5.png" alt="Left"></div>
+                <div class="card right-card-2" onclick="openSlide('hdd')"><img src="../HCI-FINAL-PROJECT/assets/img 6.png" alt="Left"></div>
+                <div class="card right-card-3" onclick="openSlide('ram')"><img src="../HCI-FINAL-PROJECT/assets/img 7.png" alt="Left"></div>
             </div>
         </main>
+    </div>
+    
+    <div id="infoSlide" class="info-overlay">
+        <div class="slide-content">
+            <span class="close-btn" onclick="closeSlide()">&times;</span>
+
+            <div class="info-text">
+                <h1 id="partName">Part Name</h1>
+                <h3>History</h3>
+                <p id="partHistory">history goes here......</p>
+                <h3>Basic Use & Functions</h3>
+                <p id="partFunction">function goes here......</p>
+            </div>
+
+            <div class="info-image">
+                <img id="partImg" src="" alt="Part Image">
+            </div>
+        </div>
     </div>
 </body>
 </html>
