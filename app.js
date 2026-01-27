@@ -45,43 +45,43 @@ document.addEventListener('DOMContentLoaded', () => {
             name: "Keyboard & Mouse",
             history: "",
             function: "",
-            image: "../HCI-FINAL-PROJECT/ "
+            image: "assets/img 1.png"
         },
         "pc-case": {
             name: "",
             history: "",
             function: "",
-            image: ""
+            image: "assets/img 2.png"
         },
         "cpu": {
             name: "",
             history: "",
             function: "",
-            image: ""
+            image: "assets/img 3.png"
         },
         "monitor": {
             name: "",
             history: "",
             function: "",
-            image: ""
+            image: "assets/img 4.png"
         },
         "ssd": {
             name: "",
             history: "",
             function: "",
-            image: ""
+            image: "assets/img 5.png"
         },
         "hdd": {
             name: "",
             history: "",
             function: "",
-            image: ""
+            image: "assets/img 6.png"
         },
         "ram": {
             name: "",
             history: "",
             function: "",
-            image: ""
+            image: "assets/img 7.png"
         }
     };
     window.openSlide = function(partKey) {
@@ -93,7 +93,10 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById("partName").innerText = data.name;
             document.getElementById("partHistory").innerText = data.history;
             document.getElementById("partFunction").innerText = data.function;
-            document.getElementById("partImg").src = data.image;
+
+            const imgElement = document.getElementById("partImg");
+            imgElement.src = data.image;
+            imgElement.alt = data.name;
 
             overlay.classList.add("active");
             console.log("Slide opened successfully.");
