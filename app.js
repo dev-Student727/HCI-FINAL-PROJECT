@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const partData = {
         "keyboard-mouse": {
             name: "Keyboard & Mouse",
-            history: "",
+            history: "The keyboard and mouse evolved from 19th-century mechanical typewriters and 1960s research, respectively, to become primary human-computer interfaces. Keyboards adopted the QWERTY layout in the 1870s to prevent mechanical jams, while the mouse was invented by Douglas Engelbart in 1964 as a wooden X-Y position indicator to navigate early graphical interfaces. <br><br><b>Key Historical Developments</b>",
             function: "",
             image: "assets/img 1.png"
         },
@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (data && overlay) {
             document.getElementById("partName").innerText = data.name;
-            document.getElementById("partHistory").innerText = data.history;
+            document.getElementById("partHistory").innerHTML = data.history;
             document.getElementById("partFunction").innerText = data.function;
 
             const imgElement = document.getElementById("partImg");
