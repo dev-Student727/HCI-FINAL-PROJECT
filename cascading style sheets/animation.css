@@ -74,6 +74,12 @@
     box-shadow: 0 0 20px rgba(218,177,218, 10);
 }
 
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+}
+
+
 
 
 /* WEDSITE - BACKGROUND */

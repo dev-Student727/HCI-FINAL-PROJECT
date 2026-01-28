@@ -12,10 +12,12 @@ as you will know waht where it is soon.
 * ✅Main Homepage file after the start up page
 
 <!-- Currently working -->
+# Currently working on
 * ❌UI for remaining file or menu
 * ❌Java script and function intergration
 * ❌Contents menu, adding information and pictures
 
 
 <!-- Not Yet Started -->
+# Not Yet Yet Started
 * ❌Contacts Menu
