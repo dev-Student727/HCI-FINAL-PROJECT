@@ -10,14 +10,17 @@ as you will know waht where it is soon.
 <!-- (Fully Accomplish): -->
 * ✅secure start Up file before the main homepage
 * ✅Main Homepage file after the start up page
+* ✅Content menu, (adding images & styles)
 
 <!-- Currently working -->
 # Currently working on
 * ❌UI for remaining file or menu
-* ❌Java script and function intergration
-* ❌Contents menu, adding information and pictures
+* ❌Java script and function intergration 
 
+# Almost Done
+* ❌Contents menu, (adding information)
 
 <!-- Not Yet Started -->
 # Not Yet Yet Started
 * ❌Contacts Menu
+* ❌Test Menu
