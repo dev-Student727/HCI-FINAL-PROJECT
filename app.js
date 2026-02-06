@@ -215,19 +215,76 @@ document.addEventListener('DOMContentLoaded', () => {
                        <ul>Faster file access and app loading</ul>
                        <ul>More durable (less damage from drops)</ul>
                        <ul>Uses less power (good for laptops)</ul>
-`,
+                       `,
             image: "assets/img 5.png"
-        },
+        }, 
+        
         "hdd": {
             name: "Hard Disk Drive (HDD)",
-            history: "",
-            function: "",
+            history: `The <b>Hard Disk Drive (HDD)</b> is one of the earliest and most important data storage technologies in computing history. It was first introduced in <b>1956 by IBM</b>
+                      with the IBM 350 Disk Storage Unit, which used large spinning magnetic platters to store data. Early HDDs were massive, expensive, and could store only a
+                      few megabytes of data, making them suitable mainly for large organizations and mainframe computers. Over the following decades, technological advancements
+                      significantly reduced their size while increasing storage capacity and reliability. By the <b>1980s and 1990s</b>, HDDs became common in personal computers, 
+                      using standardized interfaces and offering storage in the megabyte and later gigabyte range. In the <b>2000s</b>, HDD capacities expanded into terabytes while 
+                      becoming more affordable, making them ideal for mass data storage. Today, despite the rise of faster SSDs, HDDs remain widely used for bulk storage due to 
+                      their cost-effectiveness and large capacity.`,
+            function: `<b>Basic Use of HDD</b>
+                      <br><br>
+                      A <b>Hard Disk Drive (HDD)</b> is used to <b>store large amounts of data</b> in devices such as:
+                      <ul>Desktop computers and laptops</ul>
+                      <ul>Servers and data centers</ul>
+                      <ul>External storage devices</ul>
+                      <b>It stores:</b>
+                      <ul>Operating systems</ul>
+                      <ul>Software applications</ul>
+                      <ul>Documents, photos, videos, and backups</ul>
+                      An HDD <b>stores and retrieves data using magnetic technology</b> and moving parts.
+                      <br>
+                      <b>How it functions in simple terms:</b>
+                      <ul>1.Data is stored on spinning magnetic disks (platters)</ul>
+                      <ul>2.A read/write head moves across the platters to access data</ul>
+                      <ul>3.The platters rotate to locate the correct data position</ul>
+                      <ul>4.The data is then read or written and sent to the computer</ul>
+                      <b>Why HDDs Are Still Used</b>
+                      <ul>Large storage capacity</ul>
+                      <ul>More affordable than SSDs</ul>
+                      <ul>Suitable for storing large files and backups</ul>`,
             image: "assets/img 6.png"
         },
         "ram": {
             name: "Random Access Memory",
-            history: "",
-            function: "",
+            history: `Random Access Memory (RAM) is the primary memory used in computers to temporarily store data that the processor requires for quick access. The first practical 
+                      forms of RAM appeared in the late 1940s, starting with experimental memory systems such as the Williams tube, which used cathode-ray technology. This was followed 
+                      by the development of magnetic core memory in the early 1950s, which became the standard form of RAM for many years.
+                      <br></br>
+                      Random Access Memory (RAM) is the primary memory used in computers to temporarily store data that the processor requires for quick access. The first practical forms 
+                      of RAM appeared in the late 1940s, starting with experimental memory systems such as the Williams tube, which used cathode-ray technology. This was followed by the 
+                      development of magnetic core memory in the early 1950s, which became the standard form of RAM for many years.
+                      <br></br>
+                      Over the following decades, RAM technology continued to evolve, offering increased speed, capacity, and efficiency. Modern RAM used in personal computers and servers
+                      includes various standards such as SDRAM and its successors (DDR, DDR2, DDR3, DDR4, and DDR5), each improving performance and power efficiency. Today, RAM remains
+                      essential for high-speed data access, enabling computing devices to run applications efficiently and process information rapidly.`,
+            function: `<b>Basic Use of RAM</b>
+                       <br><br>
+                       RAM (Random Access Memory) is used in computers and other electronic devices to <b>temporarily store data for quick access</b>. It is essential for:
+                       <ul>Personal computers and laptops</ul>
+                       <ul>Servers and data centers</ul>
+                       <ul>Smartphones and tablets</ul>
+                       <b>It stores:</b>
+                       <ul>Data currently used by the operating system</ul>
+                       <ul>Active software applications</ul>
+                       <ul>Files and information required for processing</ul>
+                       <b>Basic Function of RAM</b>
+                       <br><br>
+                       RAM <b>stores and provides fast access to data for the processor</b>, allowing the system to operate efficiently.
+                       <b>How it functions in simple terms:</b>
+                       <ul>Data needed by the processor is <b>loaded into RAM from permanent storage</b> (HDD or SSD)</ul>
+                       <ul>The processor accesses and processes this data <b>directly from RAM</b>, which is much faster than reading from a hard drive</ul>
+                       <ul>Data in RAM is <b>temporary</b> and is cleared when the device is powered off</ul>
+                       <b>Why RAM Is Important</b>
+                       <ul>Enables <b>fast system performance</b> and smooth multitasking</ul>
+                       <ul>Supports <b>quick access to active programs and files</b></ul>
+                       <ul>Critical for <b>running applications efficiently.</b></ul>`,
             image: "assets/img 7.png"
         }
     };

@@ -11,14 +11,12 @@ as you will know waht where it is soon.
 * ✅secure start Up file before the main homepage
 * ✅Main Homepage file after the start up page
 * ✅Content menu, (adding images & styles)
+* ✅Contents menu, (adding information)
 
 <!-- Currently working -->
 # Currently working on
 * ❌UI for remaining file or menu
 * ❌Java script and function intergration 
-
-# Almost Done
-* ❌Contents menu, (adding information)
 
 <!-- Not Yet Started -->
 # Not Yet Yet Started

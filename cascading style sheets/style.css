@@ -162,7 +162,16 @@ body {
     backdrop-filter: blur(30px);
     -webkit-backdrop-filter: blur(30px);
     animation: entranceAnimation 1.5s ease-out backwards;
-    box-shadow: 0 0 10px rgba(102,241,194, 15), 0 0 30px rgba(102,241,194, 10),inset 0 0 15px rgba(102,241,194, 0.8);
+    
+    box-shadow: 0 -10px 20px rgba(102, 241, 194, 0.6), 0 10px 20px rgba(102, 241, 194, 0.6), inset 0 0 15px rgba(102, 241, 194, 0.4);
+    border-top: 2px solid rgba(102,241,194, 0.8);
+    border-bottom: 2px solid rgba(102,241,194, 0.8);
+    
+    border-left: none;
+    border-right: none;
+
+    border-radius: 0;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -179,8 +188,8 @@ body {
 }
 
 .card {
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 220px;
     border-radius: 15px;
     border: 1px solid rgba(102,241,194, 0.5);
     box-shadow: 0 0 15px rgba(102,241,194, 0.8);
