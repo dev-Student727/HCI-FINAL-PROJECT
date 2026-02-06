@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
                        interaction, enabling you to select, open, and manipulate graphical elements like icons, folders, and windows. Through actions like clicking, double-clicking, and dragging, 
                        the mouse provides a tactile way to navigate complex software layouts. Most modern mice also feature a scroll wheel, which is essential for quickly moving through long 
                        documents or web pages that extend beyond the viewable screen.</ul>`,
-            image: "assets/img 1.png"
+            image: "../assets/img 1.png"
         },
         "pc-case": {
             name: "Pc Case",
@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
                        <ul><b>Structural Support & Organization:</b. Provides a rigid frame to mount the motherboard, power supply, and drive bays.</ul>
                        <ul<b>Cable Management:</b> Includes spaces and routing options behind the motherboard tray to keep cables tidy, which improves both aesthetics and airflow.</ul>
                        <ul><b>Access to I/O Ports:</b> Provides easily accessible power/reset buttons, USB ports, and audio jacks, usually on the front or top of the case.</ul>`,
-            image: "assets/img 2.png"
+            image: "../assets/img 2.png"
         },
         "cpu": {
             name: "Central Processing Unit (CPU)",
@@ -143,7 +143,7 @@ document.addEventListener('DOMContentLoaded', () => {
                        <ul><b>Control Unit (CU):</b> Directs traffic and flow of data.</ul>
                        <ul><b>Arithmetic Logic Unit (ALU):</b> Performs calculations. </ul>
                        <ul><b>Registers:</b> Temporary storage.</ul>`,
-            image: "assets/img 3.png"
+            image: "../assets/img 3.png"
         },
         "monitor": {
             name: "Monitor",
@@ -187,7 +187,7 @@ document.addEventListener('DOMContentLoaded', () => {
                        <ul><b>Touch Input:</b> Certain monitors, known as touchscreens, act as both output and input devices by allowing direct interaction with the screen.</ul>
                        Monitors come in various types, including LED (light-emitting diode) and LCD (liquid crystal display), which have largely replaced older, larger CRT 
                        (cathode ray tube) monitors. They connect to computers using standards like VGA, DVI, HDMI, or DisplayPort.`,
-            image: "assets/img 4.png"
+            image: "../assets/img 4.png"
         },
         "ssd": {
             name: "Solid State Drive (SSD)",
@@ -216,7 +216,7 @@ document.addEventListener('DOMContentLoaded', () => {
                        <ul>More durable (less damage from drops)</ul>
                        <ul>Uses less power (good for laptops)</ul>
                        `,
-            image: "assets/img 5.png"
+            image: "../assets/img 5.png"
         }, 
         
         "hdd": {
@@ -249,7 +249,7 @@ document.addEventListener('DOMContentLoaded', () => {
                       <ul>Large storage capacity</ul>
                       <ul>More affordable than SSDs</ul>
                       <ul>Suitable for storing large files and backups</ul>`,
-            image: "assets/img 6.png"
+            image: "../assets/img 6.png"
         },
         "ram": {
             name: "Random Access Memory",
@@ -285,7 +285,7 @@ document.addEventListener('DOMContentLoaded', () => {
                        <ul>Enables <b>fast system performance</b> and smooth multitasking</ul>
                        <ul>Supports <b>quick access to active programs and files</b></ul>
                        <ul>Critical for <b>running applications efficiently.</b></ul>`,
-            image: "assets/img 7.png"
+            image: "../assets/img 7.png"
         }
     };
     window.openSlide = function(partKey) {
