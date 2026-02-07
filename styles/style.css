@@ -113,44 +113,6 @@ body {
     opacity: 0;
 }
 
-.test-wrapper {
-    flex-grow: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-
-.test-content {
-    width: 1500px; 
-    padding: 40px 40px 80px 40px ;
-
-    background: rgba(17,17,132, 0.5); 
-    backdrop-filter: blur(30px);
-    -webkit-backdrop-filter: blur(30px);
-    animation: entranceAnimation 1.5s ease-out forwards;
-    transition: transform 0.6s ease;
-
-    border-radius: 20px;
-    box-shadow: 0 0 10px rgba(102,241,194, 15), 0 0 30px rgba(102,241,194, 10),inset 0 0 15px rgba(102,241,194, 0.8);
-    color: whitesmoke;
-    min-height: 70vh;
-    box-sizing: border-box;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
-
-#test-area {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    animation: entranceAnimation 2.8s ease-out forwards;
-    animation-delay: 0.2s;
-    opacity: 0;
-}
 
 
 .glass-container {
