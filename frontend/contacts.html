@@ -9,7 +9,7 @@
     <script src="../backend/app.js"></script>
 
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=mail">
     <title>TECH.PRO | Contacts</title>
 </head>
 <body>
@@ -30,6 +30,30 @@
             <li><a href="../frontend/contacts.html">Contacts</a></li>
            </ul>
     </nav>
-    
+
+    <main class="content-wrapper">
+        <div class="left-content-area"></div>
+
+        <section class="form-container">
+            <div class="form-card">
+                <form action="#">
+                <div class="input-group">
+                    <label for="name">NAME</label>
+                    <input type="text" id="name" placeholder="Enter your Name" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">EMAIL</label>
+                    <input type="text" id="name" placeholder="Enter your Name" required>
+                </div>
+                <div class="input-group">
+                    <label for="concern">CONCERN</label>
+                    <textarea id="concern" rows="6" placeholder="Type your Concern Here"></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </section>
+    </main>
 </body>
 </html>
