@@ -3,35 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="../styles/animation.css">
+    <link rel="stylesheet" href="../styles/test.css">
     <link rel="icon" type="image/png" href="../assets/connection.png">
     <script src="../backend/app.js"></script>
     <title>TECH.PRO | Test</title>
 </head>
 <body>
+    <main class="test-container">
+        <div class="test-section-panel intro-card">
+            <h1>INTRODUCTION</h1>
+            <P>The Purpose of this test menu is not just for curiosity but to test and challenge your knowledge about the basic and complex parts of the computer.</P>
+
+            <H2>WHAT TO EXPECT:</H2>
+            <ul class="info-list">
+                <li><Strong>Topics:</Strong> Basic & Complex parts of the computer.</li>
+                <li><strong>Difficulty:</strong> Easy to Hard</li>
+                <li><strong>Goal:</strong> Finish all mode to see your total grade and score.</li>
+            </ul>
+        </div>
+
+        <div class="test-section-panel mechanics-card">
+            <h1>MECHANICS</h1>
+            <ul class="mechanics-list">
+                <li>Choose prefered mode to answer. <br>
+                    <span class="note">(note: user must have an account 1<sup>st</sup> before choosing their prefered mode).</span>
+                </li>
+                <li>Each mode has their own direction, so that challenger must read 1st and understand correctly the direction before starting the mode.</li>
+                <li>Once the challenge has started the challenger must finish answer it until the last number, because once it started, it cannot revert or back to the test menu.</li>
+                <li>The scores can see after the different modes is done answering and submit.</li>
+            </ul>
+        </div>
+    </main>
+
+    <section class="mode-selection-container">
+        <div class="mode-header">
+            <h1 class="mode-title">Choose Mode</h1>
+            <p class="mode-subtitle">This Test is to challenge your knowledge about computer</p>
+        </div>
+
+        <div class="mode-cards-wrapper">
+            <a href="../frontend/easy.html" class="mode-card easy-card" style="text-decoration: none;">
+                <h2>Easy</h2>
+            </a>
+            <a href="#" class="mode-card medium-card" style="text-decoration: none;">
+                <h2>Medium</h2>
+            </a>
+            <a href="#" class="mode-card hard-card" style="text-decoration: none;">
+                <h2>Hard</h2>
+            </a>
+        </div>
+    </section>
+
     <nav class="navbar">
         <div class="logo">
             <a href="startup.html" onclick="transitionTo(event, 'startup.html')">TECH.PRO</a>
         </div>
-           <ul class="nav-links">
+        <ul class="nav-links">
             <li><a href="../frontend/index.html">Home</a></li>
             <li><a href="../frontend/content.html">Content</a></li>
             <li><a href="../frontend/test.html">Test</a></li>
             <li><a href="../frontend/contacts.html">Contacts</a></li>
-           </ul>
+        </ul>
     </nav>
 
     <div class="tech-bg">
         <div class="orb orb-1"></div>
         <div class="orb orb-2"></div>
         <div class="orb orb-3"></div>
-    </div>
-
-    <div class="test-wrapper">
-            <div class="test-area">
-                
-            </div>
     </div>
 </body>
 </html>

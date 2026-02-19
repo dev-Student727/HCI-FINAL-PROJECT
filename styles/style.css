@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Archivo+Black&family=Oswald:wght@700&family=Special+Gothic+Expanded+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=BBH+Hegarty&family=Bungee&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Mono+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bungee&display=swap');
 body {
     min-height: 100vh;
     margin: 0;
     padding: 0;
     background: linear-gradient(to top, #4b0082, #000000, #191970);
+    color: white;
     font-family: sans-serif;
     background-attachment: fixed;
     display: flex;
@@ -13,6 +15,7 @@ body {
 }
 
 .navbar {
+    position: sticky;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,6 +24,10 @@ body {
     width: 100%;
     box-sizing: border-box;
     z-index: 10;
+
+    background: rgba(13, 17, 23, 0.4);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .startup-wrapper {
@@ -49,12 +56,16 @@ body {
     transition: all 0.5s ease-out;
 }
 
+.logo a span {
+    color: plum;
+}
+
 .logo a {
     color: white;
     font-size: 2rem;
-    font-weight: bold;
-    letter-spacing: 3px;
-    font-family: 'Archivo Black', sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-family: 'Rubik Mono One', sans-serif;
     text-decoration: none;
     cursor: pointer;
 }
@@ -330,12 +341,19 @@ body {
     line-height: 1.4;
 }
 
+
+/* Contacts Form Styling */
 .form-container {
     display: flex;
-    justify-content: flex-end;
-    padding: 50px 10%;
+    justify-content: space-between;
     align-items: center;
+    width: 100%;
+    padding: 0 9%;
+    min-width: 100vh;
+    padding-right: 9%;
     min-height: 100vh;
+    box-sizing: border-box;
+    gap: 50px;
 }
 
 .form-card {
@@ -343,9 +361,14 @@ body {
     border: 2px solid #22d3ee; /* Cyan border glow */
     border-radius: 15px;
     padding: 40px;
-    width: 100%;
-    max-width: 1500px;
+
+    width: 550px;
+    max-width: 90%;
+    min-height: 700px;
     box-shadow: 0 0 30px rgba(34, 211, 238, 0.2);
+    overflow: hidden;
+    flex-direction: column;
+    box-sizing: border-box;
 }
 
 .input-group {
@@ -355,51 +378,130 @@ body {
 .input-group label {
     display: block;
     font-family: sans-serif;
-    font-size: 0.75rem;
-    font-weight: bold;
+    font-size: 0.8rem;
+    font-weight: 600;
     color: #94a3b8;
+    text-transform: uppercase;
     letter-spacing: 2px;
-    margin-bottom: 8px;
-    line-height: 1.2;
+    margin-bottom: 12px;
 }
 
-.input-group input, 
-.input-group textarea {
+.input-group input {
     width: 100%;
-    padding: 15px;
-    border-radius: 12px;
+    padding: 18px;
+    border-radius: 8px;
     border: none;
     background-color: #ffffff;
     color: #333;
     font-size: 1rem;
-    outline: none;
-}
-
-.input-group input::placeholder, 
-.input-group textarea::placeholder {
-    color: #cbd5e1;
+    box-sizing: border-box;
 }
 
 .input-group textarea {
+    height: 200px;
+    width: 100%;
+
+    box-sizing: border-box;
+    overflow-y: hidden;
     resize: none;
+    padding: 18px;
+    border-radius: 8px;
+    border: none;
+    background-color: #ffffff;
+    color: #333;
+    font-size: 1rem;
+    
+
 }
 
 .submit-btn {
-    width: 100%;
-    padding: 14px;
-    margin-top: 10px;
+    width: 90%;
+    display: block;
+    margin: 30px auto 0;
+    padding: 16px;
     border-radius: 50px;
     border: none;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 600;
-    color: #1e293b;
+    color: white;
     cursor: pointer;
     /* Gradient: Purple to Cyan */
     background: linear-gradient(90deg, #9333ea, #22d3ee);
-    transition: transform 0.2s, opacity 0.2s;
+    transition: transform 0.5s, opacity 0.2s;
 }
 
 .submit-btn:hover {
-    transform: scale(1.02);
+    transform: scale(1.03);
     opacity: 0.9;
+}
+
+.left-content-area {
+    flex: 1;                        /* Allows text to take up available space */
+    max-width: 900px;               /* Keeps the text from stretching too wide */
+    color: white;
+    font-family: sans-serif;
+}
+
+.left-content-area h1 {
+    font-size: 120px;
+    letter-spacing: 1px;
+    line-height: 1.0;
+    font-weight: 700;
+    margin-bottom: 30px;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.left-content-area h1 span {
+    background: linear-gradient(90deg, #ff6b6b, #9333ea); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.email-container {
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.left-content-area p {
+    font-size: 25px;
+    line-height: 1.6;
+    color: white;
+}
+
+.email-support {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    
+    /* Background Styling */
+    background: rgba(13, 17, 23, 0.6); /* Dark semi-transparent matching the form */
+    padding: 12px 20px;               /* Space inside the box */
+    border-radius: 12px;              /* Rounded corners */
+    border: 1px solid rgba(34, 211, 238, 0.2); /* Subtle glow border */
+    
+    /* Optional: subtle shadow to lift it off the grid */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.mail-icon {
+    filter: drop-shadow(0 0 5px rgba(34, 211, 238, 0.5)); /* Added glow effect */
+}
+
+.email-details {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.support-label {
+    font-size: 0.85rem;
+    color: #94a3b8;
+    margin-bottom: 2px;
+}
+
+.email-address {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    letter-spacing: 0.5px;
 }

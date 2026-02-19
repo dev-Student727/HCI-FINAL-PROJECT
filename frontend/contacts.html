@@ -21,22 +21,38 @@
 
     <nav class="navbar">
         <div class="logo">
-            <a href="startup.html" onclick="transitionTo(event, 'startup.html')">TECH.PRO</a>
+            <a href="startup.html" onclick="transitionTo(event, 'startup.html')">TECH.<span>PRO</span></a>
         </div>
-           <ul class="nav-links">
+        <ul class="nav-links">
             <li><a href="../frontend/index.html">Home</a></li>
             <li><a href="../frontend/content.html">Content</a></li>
             <li><a href="../frontend/test.html">Test</a></li>
             <li><a href="../frontend/contacts.html">Contacts</a></li>
-           </ul>
+        </ul>
     </nav>
 
-    <main class="content-wrapper">
-        <div class="left-content-area"></div>
-
         <section class="form-container">
+            <div class="left-content-area">
+                <h1>START ENHANCING<br><span>YOUR TECH SKILLS</span></h1>
+                <p>We're here to answer any questions and concerns you have about our technology  ecosystem and future-forward tech learning.
+                </p>
+
+                <div class="email-container">
+                    <div class="email-support">
+                    <svg class="mail-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="#22d3ee" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M22 6L12 13L2 6" stroke="#22d3ee" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+
+                    <div class="email-details">
+                        <span class="support-label">Email Support</span>
+                        <span class="email-address">24/7support@techpro.com</span>
+                    </div>
+                </div>
+                </div>
+            </div>
             <div class="form-card">
-                <form action="#">
+                <form id="contactForm" onsubmit="return false">
                 <div class="input-group">
                     <label for="name">NAME</label>
                     <input type="text" id="name" placeholder="Enter your Name" required>
@@ -50,10 +66,9 @@
                     <textarea id="concern" rows="6" placeholder="Type your Concern Here"></textarea>
                 </div>
 
-                <button type="submit" class="submit-btn">Submit</button>
+                <button type="button" onclick="handleFormSubmit()" class="submit-btn">Submit</button>
             </form>
         </div>
     </section>
-    </main>
 </body>
 </html>
