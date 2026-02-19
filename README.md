@@ -12,10 +12,10 @@ as you will know waht where it is soon.
 * ✅Main Homepage file after the start up page
 * ✅Content menu, (adding images & styles)
 * ✅Contents menu, (adding information)
+* ✅Contacts Menu
 
 <!-- Started Working on -->
 # Started Working on
-* ❌Contacts Menu
 * ❌Test Menu
 
 <!-- Almost Done working -->

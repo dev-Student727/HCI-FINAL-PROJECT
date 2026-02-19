@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/test.css">
+    <link rel="icon" type="image/png" href="../assets/connection.png">
+    <script src="../backend/app.js"></script>
+    <title>TECH.PRO | Test</title>
+</head>
+<body class="exam-page-bg">
+
+    <div id="message-box"></div>
+
+    <div class="quiz-container">
+        <!-- Progress Section -->
+        <div class="progress-bar-bg">
+            <div id="progress-fill"></div>
+        </div>
+
+        <div class="meta-info">
+            <div id="difficulty-label">Difficulty: Easy</div>
+            <div id="question-counter">1/10</div>
+        </div>
+
+        <!-- Question Section -->
+        <div id="quiz-content">
+            <div class="question-text" id="question-display">
+                <strong>Question 1:</strong>True or False: A mechanical keyboard uses individual physical switches under every key rather than a rubber membrane.
+            </div>
+
+            <div id="options-container">
+                <!-- Options will be injected here -->
+            </div>
+        </div>
+
+        <div class="nav-buttons">
+            <button class="btn btn-prev" id="prev-btn" onclick="handlePrev()">Previous</button>
+            <button class="btn btn-next" id="next-btn" onclick="handleNext()">Next</button>
+        </div>
+    </div>
+
+    <div class="tech-bg">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+</body>
+</html>

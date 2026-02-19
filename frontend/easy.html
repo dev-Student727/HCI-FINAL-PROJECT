@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/test.css">
+    <link rel="icon" type="image/png" href="../assets/connection.png">
+    <script src="../backend/app.js"></script>
+    <title>TECH.PRO | Test</title>
+</head>
+<body class="mode-page-bg">
+    <main class="mode-detail-view">
+        <h1 class="mode-title-large">Easy Mode</h1>
+        <div class="button-group">
+            <button class="btn-exit" onclick="handleExit()">Exit</button>
+            <button class="btn-start" onclick="handleStart()">Start</button>
+        </div>
+    </main>
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="startup.html" onclick="transitionTo(event, 'startup.html')">TECH.PRO</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../frontend/index.html">Home</a></li>
+            <li><a href="../frontend/content.html">Content</a></li>
+            <li><a href="../frontend/test.html">Test</a></li>
+            <li><a href="../frontend/contacts.html">Contacts</a></li>
+        </ul>
+    </nav>
+    <div class="tech-bg">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+</body>
+</html>
