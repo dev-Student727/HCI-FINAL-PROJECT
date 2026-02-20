@@ -13,12 +13,10 @@ as you will know waht where it is soon.
 * ✅Content menu, (adding images & styles)
 * ✅Contents menu, (adding information)
 * ✅Contacts Menu
-
-<!-- Started Working on -->
-# Started Working on
-* ❌Test Menu
+* ✅Test Menu
 
 <!-- Almost Done working -->
-# Almost Done working 
+# Almost Done working
+* Exam Intergration for each mode
 * UI for remaining file or menu
-* Java script and function intergration 
+* Java script and function intergration
