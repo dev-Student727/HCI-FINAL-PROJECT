@@ -116,7 +116,7 @@ const QuizApp = {
                 
                 document.getElementById('quiz-ui').innerHTML = `
                     <div style="text-align: center; padding: 40px 0;">
-                        <h1 style="font-size: 2.5rem; font-weight: 800; color: #2e1a47; margin-bottom: 20px;">Exam Completed!</h1>
+                        <h1 style="font-size: 2.5rem; font-weight: 800; color: #2e1a47; margin-bottom: 20px;">Quiz Completed!</h1>
                         <p style="font-size: 1.5rem; color: #1a1a1a; margin-bottom: 30px;">Your Score: <strong>${score} / ${this.questions.length}</strong></p>
                         <button class="btn btn-next" onclick="window.location.assign('./test.html')">Back to Test Menu</button>
                     </div>
