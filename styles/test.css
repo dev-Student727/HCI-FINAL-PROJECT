@@ -406,20 +406,68 @@ body.exam-page-bg {
 }
 
 .quiz-container {
-    background-color: #d8a0ed;
-    width: 100%;
-    max-width: 1000px;
-    border-radius: 15px;
-    padding: 40px;
-    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+    background-color: #29094d;
+    border: 2px solid #5ce1e6; 
+    width: 100%; 
+    max-width: 1400px; 
+    min-height: 600px; 
+    border-radius: 24px; 
+    padding: 40px; 
+    box-shadow: 0 20px 60px rgba(0,0,0,0.5); 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+#registration-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #29094d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 20; /* High z-index to cover quiz elements */
+    padding: 40px;
+}
+
+.reg-title {
+    font-size: 80px; /* 3xl */
+    font-weight: 900; /* black */
+    color: #ee82ee; /* purple-900 */
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.reg-subtitle {
+    font-size: 30px;
+    font-weight: 600; /* semibold */
+    color: white; /* purple-800 */
+    margin-bottom: 1.5rem;
+}
+
+.user-input {
+    width: 100%;
+    max-width: 650px;
+    padding: 14px 20px;
+    border-radius: 12px;
+    border: 2px solid #7b2cbf;
+    font-size: 1.1rem;
+    outline: none;
+    margin-bottom: 15px;
+    color: #2e1a47;
+    font-weight: 600;
+} 
 
 .progress-bar-bg {
     background-color: #ffffff;
     height: 14px;
     border-radius: 7px;
     width: 100%;
-    margin-bottom: 25px;
     overflow: hidden;
 }
 
@@ -433,15 +481,15 @@ body.exam-page-bg {
 .meta-info {
     display: flex;
     justify-content: space-between;
-    color: #2e1a47;
+    color: #ffffff;
     font-weight: 700;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     font-size: 1rem;
 }
 
 .question-text {
     font-size: 1.7rem;
-    color: #1a1a1a;
+    color: #ffffff;
     margin-bottom: 35px;
     line-height: 1.3;
     font-weight: 500;
@@ -514,9 +562,14 @@ body.exam-page-bg {
 }
 
 .btn-prev { 
-    background-color: rgba(255, 255, 255, 0.2); 
-    color: #2e1a47;
+    background-color: #ee82ee; 
+    color: #ffffff;
     border: 1px solid rgba(46, 26, 71, 0.1);
+}
+
+.btn-prev:hover {
+    background-color: #9932cc; /* dark orchid on hover */
+    box-shadow: 0 0 15px rgba(91, 33, 182, 0.5);
 }
 
 .btn-draft { 
@@ -529,6 +582,16 @@ body.exam-page-bg {
     background-color: #8c52ff; 
     color: white; 
     box-shadow: 0 4px 15px rgba(140, 82, 255, 0.3);
+}
+
+.btn-next:hover {
+    background-color: #9932cc; /* dark orchid on hover */
+    box-shadow: 0 0 15px rgba(91, 33, 182, 0.5);
+}
+
+.btn-glow:hover {
+    background-color: #9932cc; /* dark orchid on hover */
+    box-shadow: 0 0 15px rgba(91, 33, 182, 0.5);
 }
 
 .btn:disabled { 
@@ -549,7 +612,6 @@ body.exam-page-bg {
 .modal-box {
     background: white;
     padding: 30px;
-    border-radius: 20px;
     max-width: 400px;
     width: 90%;
     text-align: center;
@@ -574,25 +636,52 @@ body.exam-page-bg {
     border-radius: 10px;
     font-weight: 700;
     cursor: pointer;
+    transition: all 0.2s;
 }
 .btn-yes {
     background:#8c52ff; 
     color: white;
 }
+
+.btn-yes:hover {
+    background-color: #9932cc; /* dark orchid on hover */
+    box-shadow: 0 0 15px rgba(91, 33, 182, 0.5);
+}
+
 .btn-no {
-    background: #e5e7eb;
+    background: #5ce1e6;
     color: #4b5563;
+}
+
+.btn-no:hover {
+    background-color: #9932cc; /* dark orchid on hover */
+    box-shadow: 0 0 15px rgba(91, 33, 182, 0.5);
+    color: #ffffff;
 }
 
 #simple-alert {
     position: fixed;
     top: 30px;
-    background: #ffffff;
-    color: #7b2cbf;
+    background-color: #29094d;
+    border: 1px solid #5ce1e6;
+    color: #5ce1e6;
     padding: 15px 40px;
     border-radius: 50px;
     box-shadow: 0 10px 40px rgba(0,0,0,0.3);
     font-weight: 800;
     display: none;
     z-index: 9999;
+}
+
+#preview-trigger {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: #ff4757;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 12px;
+    cursor: pointer;
+    z-index: 50;
 }

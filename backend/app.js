@@ -340,7 +340,7 @@ function handleStart() {
 
     if (response) {
         // If 'Yes' (OK), go to the actual test page
-                window.location.href = "exam.html";
+                window.location.href = "registration.html";
     } else {
         // If 'No' (Cancel), go back to the Choose Mode selection in the main file
                 window.location.href = "test.html#choose-mode";
