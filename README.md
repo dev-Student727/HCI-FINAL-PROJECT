@@ -15,8 +15,11 @@ as you will know waht where it is soon.
 * ✅Contacts Menu
 * ✅Test Menu
 
+# Additional Features (already done)
+* ✅Registration to unlock the quiz after confirming from the easy mode
+
 <!-- Almost Done working -->
 # Almost Done working
-* Exam Intergration for each mode
+* Exam Intergration for each mode (easy, medium, & hard)
 * UI for remaining file or menu
 * Java script and function intergration

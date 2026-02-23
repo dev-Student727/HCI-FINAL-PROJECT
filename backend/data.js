@@ -104,21 +104,25 @@ const QuizApp = {
 
             stepThree() {
                 // Step 3: Submission received
-                this.showModal("Your submission has been received.", [
-                    { text: "Okay", class: "btn-yes", onClick: () => { this.hideModal(); this.calculateAndShowResults(); } }
+                this.showModal("Your submission has been submit.", [
+                    { text: "Okay", class: "btn-yes", onClick: () => { 
+                        this.hideModal();
+                        // Set the completion flag in localStorage upon clicking "Okay"
+                        localStorage.setItem('easyModeCompleted', 'true');
+                        this.calculateAndShowResults(); 
+                    } }
                 ]);
             },
 
             calculateAndShowResults() {
                 let score = 0;
                 this.questions.forEach((q, i) => { if (this.answers[i] === q.correct) score++; });
-                localStorage.setItem('easyModeCompleted', 'true');
                 
                 document.getElementById('quiz-ui').innerHTML = `
                     <div style="text-align: center; padding: 40px 0;">
-                        <h1 style="font-size: 2.5rem; font-weight: 800; color: #2e1a47; margin-bottom: 20px;">Quiz Completed!</h1>
-                        <p style="font-size: 1.5rem; color: #1a1a1a; margin-bottom: 30px;">Your Score: <strong>${score} / ${this.questions.length}</strong></p>
-                        <button class="btn btn-next" onclick="window.location.assign('./test.html')">Back to Test Menu</button>
+                        <h1 style="font-size: 80px; font-weight: 800; color: #7fffd4; margin-bottom: 20px;">Quiz Completed!</h1>
+                        <p style="font-size: 40px; color: #ffffff; margin-bottom: 50px;">Your Score: <strong>${score} / ${this.questions.length}</strong></p>
+                        <button class="btn btn-next btn-glow" onclick="window.location.assign('./test.html')">Back to Test Menu</button>
                     </div>
                 `;
             }
