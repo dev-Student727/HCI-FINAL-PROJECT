@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Archivo+Black&family=Oswald:wght@700&family=Special+Gothic+Expanded+One&display=swap');
  /* START UP PAGE */
- .startup-logo a:hover {
+.startup-logo a:hover {
     transform: scale(1.05);
     color: white;
     text-shadow: 0 0 50px rgba(199, 21, 133, 0.8), 0 0 60px rgba(199, 21, 133, 0.6), 0 0 0px rgba(199, 21, 133, 0.3);}
@@ -22,7 +22,6 @@
     }
 }
 
-
 /* MAIN HOMEPAGE - NAVIGATION - BUTTON - CONTAINER */
 .logo a:hover {
     text-shadow: 0 0 10px rgba(4, 0, 255, 0.877);
@@ -30,37 +29,31 @@
 }
 
 .nav-links li a::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: -5px;
-  left: 0;
-  background-color: #ee82ee;
-  box-shadow: 0 0 10px #ee82ee;
-  transition: width 0.3s ease;
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #ee82ee;
+    box-shadow: 0 0 10px #ee82ee;
+    transition: width 0.3s ease;
 }
 
 .nav-links li a:hover {
     transform: translateY(-3px) scale(2.2);
-    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8), 
-                 0 0 15px rgba(126, 243, 225, 0.6);
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8), 0 0 15px rgba(126, 243, 225, 0.6);
     color: white;
 }
 
 .nav-links li a:hover::after {
-  width: 100%;
-}
-
-@keyframes entranceAnimation {
-  0% {opacity: 0; transform: translateY(-40px);}
-  100% {opacity: 1; transform: translateY(0);}
+    width: 100%;
 }
 
 @keyframes floatAnimation {
-  0% {transform: translateY(0px);}
-  50% {transform: translateY(-15px);}
-  100% {transform: translateY(0px);}
+    0% {transform: translateY(0px);}
+    50% {transform: translateY(-15px);}
+    100% {transform: translateY(0px);}
 }
 
 .glass-content:hover {
@@ -78,9 +71,6 @@
     0%, 100% { transform: translateY(0px); }
     50% { transform: translateY(-20px); }
 }
-
-
-
 
 /* WEDSITE - BACKGROUND */
 .tech-bg {
