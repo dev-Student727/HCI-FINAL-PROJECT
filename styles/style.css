@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Archivo+Black&family=Oswald:wght@700&family=Special+Gothic+Expanded+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=BBH+Hegarty&family=Bungee&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Mono+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bungee&display=swap');
+
+/* ==================== BODY STYLES FOR STARTUP, INDEX, CONTENT, & CONTATACTS ==================== */
 body {
     min-height: 100vh;
     margin: 0;
@@ -14,6 +16,7 @@ body {
     align-items: center;
 }
 
+/* ==================== STYLES FOR NAVIGATION HEADER IN INDEX, CONTENT, & CONTATACTS ==================== */
 .navbar {
     position: sticky;
     display: flex;
@@ -85,6 +88,7 @@ body {
     position: relative;
 }
 
+/* ==================== STYLES FOR INDEX CONTENT WRAPPER ==================== */
 .content-wrapper {
     flex-grow: 1;
     display: flex;
@@ -101,8 +105,6 @@ body {
     background: rgba(17,17,132, 0.5); 
     backdrop-filter: blur(30px);
     -webkit-backdrop-filter: blur(30px);
-    animation: entranceAnimation 1.5s ease-out forwards;
-    transition: transform 0.6s ease;
 
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(102,241,194, 15), 0 0 30px rgba(102,241,194, 10),inset 0 0 15px rgba(102,241,194, 0.8);
@@ -119,65 +121,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    animation: entranceAnimation 2.8s ease-out forwards;
     animation-delay: 0.2s;
     opacity: 0;
-}
-
-
-
-.glass-container {
-    width: 100%; 
-    height: 560px;
-    margin: 50px auto;
-
-    background: rgba(17,17,132, 0.5); 
-    backdrop-filter: blur(30px);
-    -webkit-backdrop-filter: blur(30px);
-    animation: entranceAnimation 1.5s ease-out backwards;
-    
-    box-shadow: 0 -10px 20px rgba(102, 241, 194, 0.6), 0 10px 20px rgba(102, 241, 194, 0.6), inset 0 0 15px rgba(102, 241, 194, 0.4);
-    border-top: 2px solid rgba(102,241,194, 0.8);
-    border-bottom: 2px solid rgba(102,241,194, 0.8);
-    
-    border-left: none;
-    border-right: none;
-
-    border-radius: 0;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    position: relative;
-}
-
-.carousel-track {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    transition: transform 0.6s ease-in-out;
-    justify-content: center;
-}
-
-.card {
-    width: 220px;
-    height: 220px;
-    border-radius: 15px;
-    border: 1px solid rgba(102,241,194, 0.5);
-    box-shadow: 0 0 15px rgba(102,241,194, 0.8);
-    transition: all 0.7s ease;
-    cursor: pointer;
-    flex-shrink: 0;
-    opacity: 0.6;
-    transform: scale(0.89);
-}
-
-.card img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
 }
 
 #main-desc {
@@ -233,6 +178,54 @@ body {
     gap: 10px;
 }
 
+/* ==================== STYLES FOR CONTENT MENU ==================== */
+.glass-container {
+    width: 100%; 
+    height: 560px;
+    margin: 50px auto;
+    background: rgba(17,17,132, 0.5); 
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    box-shadow: 0 -10px 20px rgba(102, 241, 194, 0.6), 0 10px 20px rgba(102, 241, 194, 0.6), inset 0 0 15px rgba(102, 241, 194, 0.4);
+    border-top: 2px solid rgba(102,241,194, 0.8);
+    border-bottom: 2px solid rgba(102,241,194, 0.8);
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-track {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    transition: transform 0.6s ease-in-out;
+    justify-content: center;
+}
+
+.card {
+    width: 220px;
+    height: 220px;
+    border-radius: 15px;
+    border: 1px solid rgba(102,241,194, 0.5);
+    box-shadow: 0 0 15px rgba(102,241,194, 0.8);
+    transition: all 0.7s ease;
+    cursor: pointer;
+    flex-shrink: 0;
+    opacity: 0.6;
+    transform: scale(0.89);
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
 #infoSlide {
     position: absolute;
     top: 50%;
@@ -279,7 +272,6 @@ body {
     align-items: flex-start;
     color: black;
     position: relative;
-
     overflow-y: auto;
     overflow-x: hidden;
     scrollbar-width: thin;
@@ -295,10 +287,9 @@ body {
 }
 
 .slide-content::-webkit-scrollbar-thumb {
-    background: rgba(0, 0, 0, 0.2); /* Subtle grey that matches any theme */
+    background: rgba(0, 0, 0, 0.2);
     border-radius: 10px;
 }
-
 
 .close-btn {
     position: absolute;
@@ -341,8 +332,7 @@ body {
     line-height: 1.4;
 }
 
-
-/* Contacts Form Styling */
+/* ==================== STYLES FOR CONTACT MENU OR FORM ==================== */
 .form-container {
     display: flex;
     justify-content: space-between;
@@ -357,8 +347,8 @@ body {
 }
 
 .form-card {
-    background: rgba(13, 17, 23, 0.8); /* Dark semi-transparent background */
-    border: 2px solid #22d3ee; /* Cyan border glow */
+    background: rgba(13, 17, 23, 0.8);
+    border: 2px solid #22d3ee;
     border-radius: 15px;
     padding: 40px;
 
@@ -400,7 +390,6 @@ body {
 .input-group textarea {
     height: 200px;
     width: 100%;
-
     box-sizing: border-box;
     overflow-y: hidden;
     resize: none;
@@ -410,8 +399,6 @@ body {
     background-color: #ffffff;
     color: #333;
     font-size: 1rem;
-    
-
 }
 
 .submit-btn {
@@ -425,7 +412,6 @@ body {
     font-weight: 600;
     color: white;
     cursor: pointer;
-    /* Gradient: Purple to Cyan */
     background: linear-gradient(90deg, #9333ea, #22d3ee);
     transition: transform 0.5s, opacity 0.2s;
 }
@@ -436,8 +422,8 @@ body {
 }
 
 .left-content-area {
-    flex: 1;                        /* Allows text to take up available space */
-    max-width: 900px;               /* Keeps the text from stretching too wide */
+    flex: 1;
+    max-width: 900px;
     color: white;
     font-family: sans-serif;
 }
@@ -472,19 +458,15 @@ body {
     display: flex;
     align-items: center;
     gap: 15px;
-    
-    /* Background Styling */
-    background: rgba(13, 17, 23, 0.6); /* Dark semi-transparent matching the form */
-    padding: 12px 20px;               /* Space inside the box */
-    border-radius: 12px;              /* Rounded corners */
-    border: 1px solid rgba(34, 211, 238, 0.2); /* Subtle glow border */
-    
-    /* Optional: subtle shadow to lift it off the grid */
+    background: rgba(13, 17, 23, 0.6);
+    padding: 12px 20px;
+    border-radius: 12px;
+    border: 1px solid rgba(34, 211, 238, 0.2);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .mail-icon {
-    filter: drop-shadow(0 0 5px rgba(34, 211, 238, 0.5)); /* Added glow effect */
+    filter: drop-shadow(0 0 5px rgba(34, 211, 238, 0.5));
 }
 
 .email-details {
