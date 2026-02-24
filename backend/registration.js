@@ -7,11 +7,11 @@ const RegistrationApp = {
     init() {
         this.nameInput = document.getElementById('user-name');
         this.displayNameInput = document.getElementById('display-name');
-        this.startBtn = document.getElementById('start-btn');
+        this.unlockBtn = document.getElementById('unlock-btn');
         this.alertBox = document.getElementById('simple-alert');
 
-        if (this.startBtn) {
-            this.startBtn.addEventListener('click', () => this.handleRegistration());
+        if (this.unlockBtn) {
+            this.unlockBtn.addEventListener('click', () => this.handleRegistration());
         }
     },
 
@@ -49,7 +49,7 @@ const RegistrationApp = {
         localStorage.setItem('techProUserData', JSON.stringify(userData));
 
         // 4. Redirect to the actual exam page
-        window.location.href = 'exam.html';
+        window.location.href = 'quiz-easy.html';
     }
 };
 
