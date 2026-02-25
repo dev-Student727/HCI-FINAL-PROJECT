@@ -114,13 +114,21 @@ const QuizApp = {
                 ]);
             },
 
+            debugShowScore() {
+                // Fill all answers randomly to simulate completion
+                this.questions.forEach((_, i) => {
+                    if (this.answers[i] === undefined) this.answers[i] = Math.floor(Math.random() * 4);
+                });
+                this.calculateAndShowResults();
+            },
+
             calculateAndShowResults() {
                 let score = 0;
                 this.questions.forEach((q, i) => { if (this.answers[i] === q.correct) score++; });
                 
                 document.getElementById('quiz-ui').innerHTML = `
                     <div style="text-align: center; padding: 40px 0;">
-                        <h1 style="font-size: 80px; font-weight: 800; color: #7fffd4; margin-bottom: 20px;">Quiz Completed!</h1>
+                        <h1 style="font-size: 60px; font-weight: 800; color: #3b82f6; margin-bottom: 20px;">Quiz Completed!</h1>
                         <p style="font-size: 40px; color: #ffffff; margin-bottom: 50px;">Your Score: <strong>${score} / ${this.questions.length}</strong></p>
                         <button class="btn btn-next btn-glow" onclick="window.location.assign('./test.html')">Back to Test Menu</button>
                     </div>

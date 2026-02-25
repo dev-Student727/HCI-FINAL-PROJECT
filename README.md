@@ -6,7 +6,7 @@ bu all we provided a simple test that will showcase the user's comprehension and
 each computer parts available on contents. also our website has a principle of Human computer hardware - HCI 
 as you will know waht where it is soon.
 
-# Final Project Status
+# Final Project Status (Fully Accomplish)
 <!-- (Fully Accomplish): -->
 * ✅secure start Up file before the main homepage
 * ✅Main Homepage file after the start up page
@@ -15,11 +15,20 @@ as you will know waht where it is soon.
 * ✅Contacts Menu
 * ✅Test Menu
 
-# Additional Features (already done)
-* ✅Registration to unlock the quiz after confirming from the easy mode
+# Test Menu (Choosing Mode)
+* ✅Easy Mode
+* ✅Meduim Mode
+
+# Javascript Function integration for Quiz Modes (Already Done)
+* ✅easy.js (True or false Quiz)
+* ✅medium.js (Multiple Choice Quiz)
+
+# Javascript Function integration for Quiz Mode Registration (Already Done)
+* ✅registration-easy.js (function for user details to unlock easy quiz)
+* ✅registration-medium.js (function for user details to unlock medium quiz)
 
 <!-- Almost Done working -->
 # Almost Done working
-* Exam Intergration for each mode (easy, medium, & hard)
+* Exam Intergration for (hard mode quiz)
 * UI for remaining file or menu
 * Java script and function intergration
