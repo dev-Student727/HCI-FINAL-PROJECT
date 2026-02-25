@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/test.css">
+    <link rel="stylesheet" href="../styles/animation.css">
     <link rel="icon" type="image/png" href="../assets/icon.png">
-    <script src="../backend/input.js"></script>
-    <script src="../backend/data.js"></script>
+    <script src="../backend/easy.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <title>TECH.PRO</title>
 </head>
 <body class="exam-page-bg">
+
+    <button id="debug-score-btn" onclick="QuizApp.debugShowScore()">Debug: See Score Page</button>
+    
     <div id="simple-alert">Please select an answer first!</div>
 
     <div id="modal-overlay" class="modal-overlay">
         <div class="modal-box">
             <div id="modal-title" class="modal-title">Confirmation</div>
-            <div id="modal-buttons" class="modal-buttons">
-            </div>
+            <div id="modal-buttons" class="modal-buttons"></div>
         </div>
     </div>
 
