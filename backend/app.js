@@ -330,17 +330,34 @@ function handleFormSubmit() {
     }
 }
 
-function handleExit() {
+/* ==================== HANDLE FUNCTION FOR EASY MODE ==================== */
+function handleExitEasy() {
     // This takes the user back to your main page (adjust 'index.html' to your filename)
         window.location.href = "test.html";
 }
-
-function handleStart() {
+function handleStartEasy() {
     const response = confirm("Are you sure you want to start the quiz?");
 
     if (response) {
         // If 'Yes' (OK), go to the actual test page
-                window.location.href = "registration.html";
+                window.location.href = "registration-easy.html";
+    } else {
+        // If 'No' (Cancel), go back to the Choose Mode selection in the main file
+                window.location.href = "test.html#choose-mode";
+    }
+}
+
+/* ==================== HANDLE FUNCTION FOR MEDIUM MODE ==================== */
+function handleExitMedium() {
+    // This takes the user back to your main page (adjust 'index.html' to your filename)
+        window.location.href = "test.html";
+}
+function handleStartMedium() {
+    const response = confirm("Are you sure you want to start the quiz?");
+
+    if (response) {
+        // If 'Yes' (OK), go to the actual test page
+                window.location.href = "registration-medium.html";
     } else {
         // If 'No' (Cancel), go back to the Choose Mode selection in the main file
                 window.location.href = "test.html#choose-mode";
