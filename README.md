@@ -4,6 +4,13 @@ and we called it TECH.PRO, why? because this website is not only consisting a GU
 but we provid a simple quiz that will showcase the user's comprehension and assessment about the different part of the computer.
 also our website has a principle of Human computer interaction.
 
+# PROJECT FEATURES
+* Startup
+* Homepage (Introductions)
+* Content (Contents About different computer parts)
+* Test- Quiz Modes and Quiz (Easy, Meduim, and Hard)
+* Contacts
+
 # HUMAN COMPUTER INTERACTION PRINCIPLE
 * Hovering Effect
 * Transform and transition effect
