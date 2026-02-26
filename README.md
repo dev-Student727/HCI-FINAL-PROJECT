@@ -1,13 +1,15 @@
-# HCI-FINAL-PROJECT
-Github respository for HCI FINAL PROJECT!!!
+# HCI-FINAL-PROJECT (OVERVIEW)
 Our Project is all about the different parts of computer hardware, we integreate it or put in to the website
 and we called it TECH.PRO, why? because this website is not only consisting a GUI and the description of each computer part
-bu all we provided a simple test that will showcase the user's comprehension and assessment after clicking reading and opening
-each computer parts available on contents. also our website has a principle of Human computer hardware - HCI 
-as you will know waht where it is soon.
+but we provid a simple quiz that will showcase the user's comprehension and assessment about the different part of the computer.
+also our website has a principle of Human computer interaction.
+
+# HUMAN COMPUTER INTERACTION PRINCIPLE
+* 
 
 # Final Project Status (Fully Accomplish)
-<!-- (Fully Accomplish): -->
+* ✅Java script and function intergration
+* ✅UI for remaining file or menu
 * ✅secure start Up file before the main homepage
 * ✅Main Homepage file after the start up page
 * ✅Content menu, (adding images & styles)
@@ -15,23 +17,13 @@ as you will know waht where it is soon.
 * ✅Contacts Menu
 * ✅Test Menu
 
-# HUMAN COMPUTER INTERACTION PRINCIPLE
-* 
-
-# Test Menu (Choosing Mode)
+# Test Menu (Choosing Mode, Registration, & Exam Integration)
 * ✅Easy Mode
 * ✅Meduim Mode
-
-# Javascript Function integration for Quiz Modes (Already Done)
+* ✅Hard Mode
 * ✅easy.js (True or false Quiz)
 * ✅medium.js (Multiple Choice Quiz)
-
-# Javascript Function integration for Quiz Mode Registration (Already Done)
+* ✅Hard.js (Fill in the blank Quiz)
 * ✅registration-easy.js (function for user details to unlock easy quiz)
 * ✅registration-medium.js (function for user details to unlock medium quiz)
-
-<!-- Almost Done working -->
-# Almost Done working
-* Exam Intergration for (hard mode quiz)
-* UI for remaining file or menu
-* Java script and function intergration
+* ✅registration-hard.js (function for user details to unlock hard quiz)
