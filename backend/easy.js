@@ -1,17 +1,61 @@
+/* ------------- correct: 0 for True. ------------- */
+/* ------------- correct: 1 for false. ------------- */
+
+
 const QuizApp = {
             currentIndex: 0,
             answers: {},
             questions: [
-                { text: "True or False: The keyboard is the main tool used to type letters and numbers into a computer.", correct: 0 },
-                { text: "True or False: A PC case is a giant box used to keep all the computer's brains and parts together.", correct: 0 },
-                { text: "True or False: The DPI setting on a mouse stands for Digital Picture Interface.", correct: 1 },
-                { text: "True or False: You should use a mouse on a flat surface to help the cursor move smoothly.", correct: 0 },
-                { text: "True or False: The monitor is the screen where you see pictures, videos, and text.", correct: 0 },
-                { text: "True or False: If you turn off the monitor, the entire computer automatically deletes all your files.", correct: 1},
-                { text: "True or False: A wireless mouse requires a physical cord to be plugged into the computer at all times to work.", correct: 1},
-                { text: "True or False: The Spacebar is usually the longest key on a keyboard.", correct: 0},
-                { text: "True or False: You can click things on the screen by pressing the buttons on a mouse.", correct:0},
-                { text: "True or False: It is perfectly safe to pour a glass of water inside your PC case while it is running.", correct: 1}
+                {
+                    text: "True or False: The keyboard's primary function is to act as the main text-entry interface for letters and numbers.",
+                    // True: Based on Keyboard function text
+                    correct: 0
+                },
+                {
+                    text: "True or False: A PC case (chassis) is designed to house, support, and protect internal components like the motherboard.",
+                    // True: Based on PC Case function text
+                    correct: 0
+                },
+                {
+                    text: "True or False: An SSD uses spinning magnetic disks and a moving read/write head to access your files.",
+                    // False: SSDs use flash memory chips; HDDs use spinning disks
+                    correct: 1
+                },
+                {
+                    text: "True or False: The mouse is a pointing device that translates hand movements into the movement of a digital cursor.",
+                    // True: Based on Mouse function text
+                    correct: 0
+                },
+                {
+                    text: "True or False: The CPU is often called the 'brain' of the computer because it fetches and executes instructions.",
+                    // True: Based on CPU function text
+                    correct: 0
+                },
+                {
+                    text: "True or False: Data stored in RAM is permanent and will stay there even after you turn the computer off.",
+                    // False: RAM is temporary and clears when powered off
+                    correct: 1
+                },
+                {
+                    text: "True or False: Modern monitors act as output devices that convert electrical signals into visible images and text.",
+                    // True: Based on Monitor function text
+                    correct: 0
+                },
+                {
+                    text: "True or False: The primary purpose of a PC Case's mesh front is to block all airflow to keep the computer quiet.",
+                    // False: Mesh fronts prioritize high-volume airflow for cooling
+                    correct: 1
+                },
+                {
+                    text: "True or False: Hard Disk Drives (HDDs) are generally more affordable than SSDs for storing large amounts of data.",
+                    // True: Based on HDD 'Why they are still used' text
+                    correct: 0
+                },
+                {
+                    text: "True or False: Bluetooth and RF technology allow modern keyboards and mice to work without physical cords.",
+                    // True: Based on Keyboard/Mouse history text
+                    correct: 0
+                }
             ],
             options: ["True", "False"],
 
@@ -87,7 +131,6 @@ const QuizApp = {
             },
 
             startConfirmationFlow() {
-                // Step 1: Are you sure all answers are correct?
                 this.showModal("Are you sure that all your answers are correct?", [
                     { text: "Yes", class: "btn-yes", onClick: () => this.stepTwo() },
                     { text: "No", class: "btn-no", onClick: () => this.hideModal() }
@@ -95,7 +138,6 @@ const QuizApp = {
             },
 
             stepTwo() {
-                // Step 2: Are you sure you want to submit?
                 this.showModal("Are you sure you want to submit this quiz?", [
                     { text: "Yes", class: "btn-yes", onClick: () => this.stepThree() },
                     { text: "No", class: "btn-no", onClick: () => this.hideModal() }
@@ -103,11 +145,9 @@ const QuizApp = {
             },
 
             stepThree() {
-                // Step 3: Submission received
                 this.showModal("Your submission has been submit.", [
                     { text: "Okay", class: "btn-yes", onClick: () => { 
                         this.hideModal();
-                        // Set the completion flag in localStorage upon clicking "Okay"
                         localStorage.setItem('easyModeCompleted', 'true');
                         this.calculateAndShowResults(); 
                     } }
@@ -115,21 +155,37 @@ const QuizApp = {
             },
 
             debugShowScore() {
-                // Fill all answers randomly to simulate completion
                 this.questions.forEach((_, i) => {
-                    if (this.answers[i] === undefined) this.answers[i] = Math.floor(Math.random() * 4);
+                    if (this.answers[i] === undefined) this.answers[i] = this.questions[i].correct;
                 });
                 this.calculateAndShowResults();
             },
 
             calculateAndShowResults() {
                 let score = 0;
-                this.questions.forEach((q, i) => { if (this.answers[i] === q.correct) score++; });
+                const reviewHtml = this.questions.map((q, i) => {
+                    const userIdx = this.answers[i];
+                    const isCorrect = userIdx === q.correct;
+                    if (isCorrect) score++;
+                    return `
+                        <div class="review-row">
+                            <span style="color: ${isCorrect ? '#22c55e' : '#ef4444'}; font-weight: 800; margin-right: 15px;">${isCorrect ? '✓' : '✗'}</span>
+                            Q${i+1}: ${this.options[userIdx]} 
+                            <span style="opacity: 0.5; margin-left: 10px;">(Correct: ${this.options[q.correct]})</span>
+                        </div>
+                    `;
+                }).join('');
                 
                 document.getElementById('quiz-ui').innerHTML = `
-                    <div style="text-align: center; padding: 40px 0;">
-                        <h1 style="font-size: 60px; font-weight: 800; color: #3b82f6; margin-bottom: 20px;">Quiz Completed!</h1>
+                    <div style="text-align: center;">
+                        <h1 style="font-size: 60px; font-weight: 800; color: #3b82f6; margin-bottom: 20px; font-family: 'Bungee'">Quiz Completed!</h1>
+
                         <p style="font-size: 40px; color: #ffffff; margin-bottom: 50px;">Your Score: <strong>${score} / ${this.questions.length}</strong></p>
+                        
+                        <div class="review-list">
+                            ${reviewHtml}
+                        </div>
+
                         <button class="btn btn-next btn-glow" onclick="window.location.assign('./test.html')">Back to Test Menu</button>
                     </div>
                 `;

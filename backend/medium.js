@@ -8,103 +8,123 @@ const QuizApp = {
             answers: {},
             questions: [
                 {
-                    text: "Which component is responsible for performing actual calculations and processing tasks?",
-                    options: ["RAM", "SSD", "CPU", "PC Case"],
-                    correct: 2
-                },
-                {
-                    text: "What does 'SSD' stand for?",
-                    options: ["Static Storage Drive", "Solid State Drive", "System Serial Data", "Standard Slot Device"],
+                    text: "In the context of the CPU's continuous cycle, what are the three specific stages it performs to run applications?",
+                    options: ["Input-Process-Output", "Fetch-Decode-Execute", "Read-Write-Store", "Load-Translate-Display"],
+                    // Source: CPU Function ("operates in a continuous cycle (fetch-decode-execute)")
                     correct: 1
                 },
                 {
-                    text: "RAM (Random Access Memory) is considered 'volatile' memory. What does this mean?",
-                    options: ["It is very fast", "It stores data even without power", "It loses data when power is turned off", "It is easily broken"],
-                    correct: 2
-                },
-                {
-                    text: "Which storage device uses physical spinning disks to read and write data?",
-                    options: ["SSD", "RAM", "CPU", "HDD"],
-                    correct: 3
-                },
-                {
-                    text: "Which monitor specification determines the total number of pixels on the screen?",
-                    options: ["Refresh Rate", "Resolution", "Response Time", "Aspect Ratio"],
+                    text: "Why did the 1990s see a shift from horizontal desktop cases to the 'Vertical Tower' design?",
+                    options: ["To support heavier CRT monitors", "To accommodate more powerful components and improve airflow", "To allow for the invention of the trackball mouse", "To integrate the keyboard into the chassis"],
+                    // Source: PC Case History ("As internal components became more powerful and generated more heat... shift allowed for better airflow")
                     correct: 1
                 },
                 {
-                    text: "What is the primary purpose of the PC Case?",
-                    options: ["Increase internet speed", "Provide structure and airflow", "Process graphics", "Act as a battery"],
+                    text: "According to the history of the mouse, what specific mechanical change in the late 1990s eliminated the need for internal cleaning?",
+                    options: ["The move from wooden boxes to plastic", "The transition from trackballs to optical sensors", "The introduction of Bluetooth tethers", "The addition of a scroll wheel"],
+                    // Source: Keyboard & Mouse History ("transitioned from trackballs to optical sensors... eliminating the need for internal cleaning")
                     correct: 1
                 },
                 {
-                    text: "What does a mouse's 'Polling Rate' measure?",
-                    options: ["Number of buttons", "Frequency of reporting position", "Maximum movement speed", "RGB brightness"],
+                    text: "How does the 'Open Interior' layout in modern PC cases differ from older designs?",
+                    options: ["It removes bulky front cages used for HDDs and optical drives", "It integrates the monitor directly into the metal frame", "It uses vacuum tubes instead of transistors", "It requires the motherboard to be placed on top of the case"],
+                    // Source: PC Case History ("allowed manufacturers to remove bulky front cages, leading to the Open Interior layout")
+                    correct: 0
+                },
+                {
+                    text: "What is the primary functional difference between how data is retrieved from an SSD versus an HDD?",
+                    options: ["SSD uses magnetic platters; HDD uses flash chips", "SSD accesses data electronically via memory cells; HDD uses a moving read/write head", "SSD is used for backups; HDD is used for the operating system", "SSD is slower but more durable than HDD"],
+                    // Source: SSD/HDD Functions ("SSD accesses it electronically... HDD a read/write head moves across the platters")
                     correct: 1
                 },
                 {
-                    text: "Why is an SSD preferred over an HDD for an operating system?",
-                    options: ["It is cheaper", "It has more moving parts", "Much faster read/write speeds", "Higher capacity per dollar"],
-                    correct: 2
-                },
-                {
-                    text: "Which of these is often called the 'brain' of the computer?",
-                    options: ["Monitor", "Motherboard", "CPU", "RAM"],
-                    correct: 2
-                },
-                {
-                    text: "What is the most common connector for keyboards and mice today?",
-                    options: ["PS/2", "VGA", "USB", "HDMI"],
-                    correct: 2
-                },
-                {
-                    text: "Increasing RAM capacity primarily helps the computer to:",
-                    options: ["Store more movies", "Run multiple programs smoothly", "Brighten the screen", "Block viruses"],
+                    text: "Which historical milestone in 1971 marked the transition from vacuum tubes to single-chip microprocessors?",
+                    options: ["The release of the IBM PC", "The invention of the Intel 4004", "The creation of the Xerox Alto", "The release of the Apple Macintosh"],
+                    // Source: CPU History ("single-chip microprocessors starting with the Intel 4004 in 1971")
                     correct: 1
                 },
                 {
-                    text: "Which monitor port carries both high-definition video and audio signals?",
-                    options: ["DVI", "VGA", "HDMI", "Serial Port"],
-                    correct: 2
-                },
-                {
-                    text: "Who is Intel's primary competitor in the consumer CPU market?",
-                    options: ["Nvidia", "AMD", "Samsung", "Microsoft"],
+                    text: "Beyond simple typing, what is the 'Keyboard's' role as a command console?",
+                    options: ["It adjusts the physical weight of the PC case", "It uses shortcuts to execute tasks like saving files or switching programs", "It provides the main power supply to the monitor", "It translates hand movements into a digital cursor"],
+                    // Source: Keyboard & Mouse Function ("command console where specific keys or combinations... can execute complex tasks")
                     correct: 1
                 },
                 {
-                    text: "What is a common disadvantage of a Hard Disk Drive (HDD)?",
-                    options: ["It is too quiet", "Susceptible to damage if dropped while running", "Too small for desktop cases", "Consumes no power"],
+                    text: "What specific risk is reduced by using 'Standoffs' or grounding within a PC Case?",
+                    options: ["Input lag on the mouse", "Static electricity damage to delicate internal components", "Slow internet download speeds", "Mechanical jamming of the keyboard arms"],
+                    // Source: PC Case Function ("provides grounding to protect components from static electricity")
                     correct: 1
                 },
                 {
-                    text: "On a mechanical keyboard, the 'feel' is determined by the:",
-                    options: ["Keycap color", "Switch type", "Cable length", "Ghosting"],
+                    text: "Why is data in RAM referred to as 'temporary'?",
+                    options: ["It can only be used by the mouse", "It is cleared whenever the device is powered off", "It is physically moved to the monitor after 10 minutes", "It is made of magnetic core memory that expires"],
+                    // Source: RAM Function ("Data in RAM is temporary and is cleared when the device is powered off")
                     correct: 1
                 },
                 {
-                    text: "Which component's speed is most likely measured in Gigahertz (GHz)?",
-                    options: ["Monitor", "SSD", "CPU", "Mouse"],
-                    correct: 2
-                },
-                {
-                    text: "What is the standard aspect ratio for a modern widescreen monitor?",
-                    options: ["4:3", "1:1", "16:9", "21:9"],
-                    correct: 2
-                },
-                {
-                    text: "Where is the CPU physically installed?",
-                    options: ["PC Case wall", "Inside the SSD", "Motherboard Socket", "Monitor Back"],
-                    correct: 2
-                },
-                {
-                    text: "What does 'RGB' stand for in hardware lighting?",
-                    options: ["Real Graphics Boost", "Red, Green, Blue", "Rapid Gaming Battery", "Rear General Bus"],
+                    text: "The 1940s-era monitors were referred to as 'glass TTY' terminals because they used what technology?",
+                    options: ["LED-backlit LCD", "Cathode Ray Tube (CRT) vacuum tubes", "IPS (In-Plane Switching)", "OLED bitmap displays"],
+                    // Source: Monitor History ("Early monitors, or 'glass TTY' terminals... using vacuum tube technology")
                     correct: 1
                 },
                 {
-                    text: ":",
-                    options: ["HDD Space", "RAM", "Refresh Rate", "DPI"],
+                    text: "Which CPU component is specifically responsible for mathematical operations and logical comparisons like 'AND' or 'OR'?",
+                    options: ["Control Unit (CU)", "Arithmetic Logic Unit (ALU)", "Registers", "SDRAM"],
+                    // Source: CPU Function ("Arithmetic Logic Unit (ALU) performs mathematical operations... and logical comparisons")
+                    correct: 1
+                },
+                {
+                    text: "In the history of the keyboard, why was the QWERTY layout originally introduced in 1874?",
+                    options: ["To make typing faster for computers", "To prevent mechanical arms from jamming in typewriters", "To allow for RGB lighting integration", "To standardize the IBM Model M layout"],
+                    // Source: Keyboard & Mouse History ("introduced the QWERTY layout designed to prevent mechanical arms from jamming")
+                    correct: 1
+                },
+                {
+                    text: "What is the primary advantage of 'Cable Management' besides aesthetics?",
+                    options: ["It increases the storage capacity of the SSD", "It improves airflow and prevents overheating", "It allows the keyboard to work wirelessly", "It enables the monitor to display 16 colors"],
+                    // Source: PC Case Function ("routing options... to keep cables tidy, which improves both aesthetics and airflow")
+                    correct: 1
+                },
+                {
+                    text: "Which milestone development in 1981 set the industry standard for monitor color support?",
+                    options: ["Karl Ferdinand Braun's CRT", "IBM's Color Graphics Adapter (CGA)", "NEC's LED-backlit monitor", "The Xerox Alto bitmap display"],
+                    // Source: Monitor History ("IBM's Color Graphics Adapter (CGA) in 1981, which supported 16 colors")
+                    correct: 1
+                },
+                {
+                    text: "How does the 'Control Unit' (CU) inside the CPU function?",
+                    options: ["By performing addition and subtraction", "By managing the flow of data between the CPU, memory, and I/O devices", "By storing files permanently like an HDD", "By cooling the system through ventilation"],
+                    // Source: CPU Function ("Control Unit (CU) manages the flow of data between the CPU, memory, and input/output devices")
+                    correct: 1
+                },
+                {
+                    text: "The first mouse prototype (1963) was a wooden box that used what to track movement?",
+                    options: ["A single rubber ball", "Two metal wheels positioned perpendicularly", "An optical laser sensor", "A Teletype telegraph wire"],
+                    // Source: Keyboard & Mouse History ("wooden box with two metal wheels positioned perpendicularly")
+                    correct: 1
+                },
+                {
+                    text: "Why is an SSD generally preferred over an HDD for a laptop's primary drive?",
+                    options: ["It uses more power to increase speed", "It is more durable and uses less power", "It has more spinning platters for better storage", "It can only be used in servers and data centers"],
+                    // Source: SSD Function ("More durable (less damage from drops) / Uses less power (good for laptops)")
+                    correct: 1
+                },
+                {
+                    text: "Which memory technology served as the standard for RAM in the early 1950s?",
+                    options: ["SDRAM", "Magnetic core memory", "Williams tube cathode-ray technology", "DDR5"],
+                    // Source: RAM History ("development of magnetic core memory in the early 1950s, which became the standard")
+                    correct: 1
+                },
+                {
+                    text: "The ATX standard (1995) was introduced by which company to standardize PC Case internals?",
+                    options: ["IBM", "Apple", "Intel", "AMD"],
+                    // Source: PC Case History ("ATX... standard was introduced by Intel in 1995")
+                    correct: 2
+                },
+                {
+                    text: "When a processor requires data, what is the step-by-step relationship between RAM and permanent storage?",
+                    options: ["Data is moved from the monitor to the RAM", "Data is loaded into RAM from the HDD or SSD for the processor to access", "The CPU sends data to the HDD to be processed by the RAM", "RAM sends data to the keyboard to be saved on the SSD"],
+                    // Source: RAM Function ("Data needed by the processor is loaded into RAM from permanent storage (HDD or SSD)")
                     correct: 1
                 }
             ],
@@ -132,7 +152,6 @@ const QuizApp = {
                 this.progressEl.style.width = `${((this.currentIndex + 1) / this.questions.length) * 100}%`;
                 
                 this.optionsEl.innerHTML = '';
-                // Dynamically use current.options from the question object
                 current.options.forEach((opt, idx) => {
                     const sel = this.answers[this.currentIndex] === idx;
                     const card = document.createElement('div');
@@ -164,10 +183,7 @@ const QuizApp = {
             },
 
             handlePrev() {
-                if (this.currentIndex > 0) { 
-                    this.currentIndex--; 
-                    this.render(); 
-                }
+                if (this.currentIndex > 0) { this.currentIndex--; this.render(); }
             },
 
             showModal(text, buttons) {
@@ -212,25 +228,37 @@ const QuizApp = {
             },
 
             debugShowScore() {
-                // Fill all answers randomly to simulate completion
                 this.questions.forEach((_, i) => {
-                    if (this.answers[i] === undefined) this.answers[i] = Math.floor(Math.random() * 4);
+                    if (this.answers[i] === undefined) this.answers[i] = this.questions[i].correct;
                 });
                 this.calculateAndShowResults();
             },
 
             calculateAndShowResults() {
-                this.hideModal();
                 let score = 0;
-                this.questions.forEach((q, i) => { 
-                    if (this.answers[i] === q.correct) score++; 
-                });
+                const reviewHtml = this.questions.map((q, i) => {
+                    const userIdx = this.answers[i];
+                    const isCorrect = userIdx === q.correct;
+                    if (isCorrect) score++;
+                    return `
+                        <div class="review-row">
+                            <span style="color: ${isCorrect ? '#22c55e' : '#ef4444'}; font-weight: 800; margin-right: 15px;">${isCorrect ? '✓' : '✗'}</span>
+                            Q${i+1}: ${q.options[userIdx]} 
+                            <span style="opacity: 0.5; margin-left: 10px;">(Correct: ${q.options[q.correct]})</span>
+                        </div>
+                    `;
+                }).join('');
                 
                 document.getElementById('quiz-ui').innerHTML = `
-                    <div style="text-align: center; padding: 40px 0;">
-                        <h1 style="font-size: 60px; font-weight: 800; color: #3b82f6; margin-bottom: 20px;">Quiz Completed!</h1>
+                    <div style="text-align: center;">
+                        <h1 style="font-size: 60px; font-weight: 800; color: #3b82f6; margin-bottom: 10px; font-family: 'Bungee';">Quiz Completed!</h1>
                         <p style="font-size: 40px; color: #ffffff; margin-bottom: 50px;">Your Score: <strong>${score} / ${this.questions.length}</strong></p>
-                        <button class="btn btn-next btn-glow" onclick="window.location.assign('./test.html')">Back to Test Menu</button>
+                        
+                        <div class="review-list">
+                            ${reviewHtml}
+                        </div>
+
+                        <button class="btn btn-next btn-glow" onclick="window.location.reload()">Back to Test Menu</button>
                     </div>
                 `;
             }
