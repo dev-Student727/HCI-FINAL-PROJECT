@@ -6,22 +6,23 @@
     <link rel="stylesheet" href="../styles/test.css">
     <link rel="stylesheet" href="../styles/animation.css">
     <link rel="icon" type="image/png" href="../assets/icon.png">
-    <script src="../backend/app.js"></script>
+    <script src="../javascript/app.js"></script>
     <title>TECH.PRO</title>
 </head>
 <body>
     <main class="mode-detail-view">
-        <h1 class="mode-title-large">MEDIUM MODE</h1>
-        <p class="mode-subtitle">This is a multiple choice Quiz, please select the best answer!!</p>
+        <h1 class="mode-title-hard">HARD MODE</h1>
+        <p class="mode-subtitle">This is a Fill in the blank Quiz, please make sure you think before you type!!</p>
+        <span class="direction">(Direction: This fill in the blank quiz is not just simple fill in the blanks that you need to type your answer, but instead you will be choosing <br>the answer from the choice box below the input box or simply type it, so that you need to think first before choosing or typing the answer.)</span>
         <div class="button-group">
-            <button class="btn-exit-medium" onclick="handleExitMedium()">Exit</button>
-            <button class="btn-start-medium" onclick="handleStartMedium()">Start</button>
+            <button class="btn-exit-hard" onclick="handleExitHard()">Exit</button>
+            <button class="btn-start-hard" onclick="handleStartHard()">Start</button>
         </div>
     </main>
 
-    <nav class="navbar">  
+    <nav class="navbar">
         <div class="logo">
-            <a href="startup.html" onclick="transitionTo(event, 'startup.html')">TECH.<span>PRO</span></a>
+            <a href="../frontend/startup.html" onclick="transitionTo(event, 'startup.html')">TECH.<span>PRO</span></a>
         </div>
         <ul class="nav-links">
             <li><a href="../frontend/index.html">Home</a></li>
