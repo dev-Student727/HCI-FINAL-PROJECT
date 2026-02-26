@@ -10,8 +10,9 @@ also our website has a principle of Human computer interaction.
 * Float effect
 * Background Gridlines
 * Exam Integration (Easy, Medium, & Hard)
-* Buttons
+* Buttons (Hovering, & Tranform Effect)
 * User Input
+* Cursor Hover
 
 # Final Project Overall Summary (Fully Accomplish)
 * ✅Java script and function intergration
