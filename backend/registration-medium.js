@@ -7,8 +7,8 @@ const RegistrationApp = {
     init() {
         this.nameInput = document.getElementById('user-name');
         this.displayNameInput = document.getElementById('display-name');
-        this.unlockBtn = document.getElementById('unlock-btn-easy');
-        this.alertBox = document.getElementById('simple-alert');
+        this.unlockBtn = document.getElementById('unlock-btn-medium');
+        this.alertBox = document.getElementById('alert-message');
 
         if (this.unlockBtn) {
             this.unlockBtn.addEventListener('click', () => this.handleRegistration());
