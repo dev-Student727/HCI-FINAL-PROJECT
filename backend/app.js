@@ -363,3 +363,20 @@ function handleStartMedium() {
                 window.location.href = "test.html#choose-mode";
     }
 }
+
+/* ==================== HANDLE FUNCTION FOR HARD MODE ==================== */
+function handleExitHard() {
+    // This takes the user back to your main page (adjust 'index.html' to your filename)
+        window.location.href = "test.html";
+}
+function handleStartHard() {
+    const response = confirm("Are you sure you want to start the quiz?");
+
+    if (response) {
+        // If 'Yes' (OK), go to the actual test page
+                window.location.href = "registration-hard.html";
+    } else {
+        // If 'No' (Cancel), go back to the Choose Mode selection in the main file
+                window.location.href = "test.html#choose-mode";
+    }
+}
