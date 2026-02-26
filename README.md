@@ -5,9 +5,15 @@ but we provid a simple quiz that will showcase the user's comprehension and asse
 also our website has a principle of Human computer interaction.
 
 # HUMAN COMPUTER INTERACTION PRINCIPLE
-* 
+* Hovering Effect
+* Transform and transition effect
+* Float effect
+* Background Gridlines
+* Exam Integration (Easy, Medium, & Hard)
+* Buttons
+* User Input
 
-# Final Project Status (Fully Accomplish)
+# Final Project Overall Summary (Fully Accomplish)
 * ✅Java script and function intergration
 * ✅UI for remaining file or menu
 * ✅secure start Up file before the main homepage
@@ -17,7 +23,6 @@ also our website has a principle of Human computer interaction.
 * ✅Contacts Menu
 * ✅Test Menu
 
-# Test Menu (Choosing Mode, Registration, & Exam Integration)
 * ✅Easy Mode
 * ✅Meduim Mode
 * ✅Hard Mode
