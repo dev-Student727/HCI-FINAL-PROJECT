@@ -15,6 +15,9 @@ as you will know waht where it is soon.
 * ✅Contacts Menu
 * ✅Test Menu
 
+# HUMAN COMPUTER INTERACTION PRINCIPLE
+* 
+
 # Test Menu (Choosing Mode)
 * ✅Easy Mode
 * ✅Meduim Mode
